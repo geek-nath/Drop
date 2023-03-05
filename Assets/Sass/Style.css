@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kaushan+Script&display=swap");
+body {
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif !important;
+}
+body .btn {
+  padding: 12px 25px !important;
+  font-size: 1.2rem;
+  border-radius: 10px !important;
+}
+body .btn.btn-primary {
+  background-color: #6C63FF !important;
+  border-color: #6C63FF !important;
+}
+body nav .container div .btn-primary {
+  padding: 10px 20px !important;
+}
+body .hero {
+  height: 100vh;
+  width: 100%;
+  background: url("../images/Curve Line.svg");
+  background-position: center;
+  background-size: cover;
+}
+body .hero .container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+body .hero .container .hero_text {
+  width: 100%;
+}
+body .hero .container .hero_text .row .col-md-6 .text-white h5 {
+  font-family: "Kaushan Script", cursive !important;
+}
+body .hero .container .hero_text .row .col-md-6 .text-white h1 {
+  font-size: 3.3rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+}/*# sourceMappingURL=Style.css.map */
