@@ -164,11 +164,95 @@ body {
             // about
             &.about {
                 .container {
+                    .row {
+                        .col-md-6 {
+                            h1 {
+                                font-family: 'Kaushan Script', cursive;
+                            }
+                            .mt-3 {
+                                ul {
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr;
+                                    gap: .8rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // services
+            &.services {
+                .container {
                     h1 {
                         font-family: 'Kaushan Script', cursive;
+                    }
+
+                    .mt-4 {
+                        .row {
+                            @media screen and (max-width: 768px) {
+                                display: grid !important;
+                                grid-template-columns: 1fr 1fr !important;
+
+                                @media screen and (max-width: 425px) {
+                                    grid-template-columns: 1fr  !important;
+
+                                    .col-md-4 {
+                                        width: 100%;
+    
+                                        &:nth-child(2) {
+                                            margin-top: 20px;
+                                        }
+                                    }
+                                }
+
+                                .col-md-4 {
+                                    width: 100%;
+
+                                    &:last-child {
+                                        margin-top: 20px;
+                                    }
+                                }
+                            }
+
+                            .col-md-4 {
+                                .card {
+                                    border-radius: 10px;
+
+                                    h3 {
+                                        font-family: 'Kaushan Script', cursove;
+                                        color: #6C63FF;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // faq
+            &.faq {
+                .container {
+                    h1 {
+                        font-family: 'Kaushan Script', cursive;
+                    }
+
+                    .mt-3 {
+                        .accordion-button {
+                            box-shadow: none !important;
+                            // background-color: white !important;
+                        }
                     }
                 }
             }
         }
+    }
+
+    // footer
+    footer {
+        padding: 5rem 0px;
+        background: url('../images/Rect\ Light.svg');
+        background-position: center;
+        background-size: cover;
     }
 }

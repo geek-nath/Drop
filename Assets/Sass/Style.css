@@ -105,6 +105,58 @@ body .hero .container .hero_text .row .col-md-6 .text-white h1 {
 body main section {
   padding: 5rem 0px;
 }
-body main section.about .container h1 {
+body main section.about .container .row .col-md-6 h1 {
   font-family: "Kaushan Script", cursive;
+}
+body main section.about .container .row .col-md-6 .mt-3 ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+body main section.services .container h1 {
+  font-family: "Kaushan Script", cursive;
+}
+@media screen and (max-width: 768px) {
+  body main section.services .container .mt-4 .row {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 425px) {
+  body main section.services .container .mt-4 .row {
+    grid-template-columns: 1fr !important;
+  }
+  body main section.services .container .mt-4 .row .col-md-4 {
+    width: 100%;
+  }
+  body main section.services .container .mt-4 .row .col-md-4:nth-child(2) {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  body main section.services .container .mt-4 .row .col-md-4 {
+    width: 100%;
+  }
+  body main section.services .container .mt-4 .row .col-md-4:last-child {
+    margin-top: 20px;
+  }
+}
+body main section.services .container .mt-4 .row .col-md-4 .card {
+  border-radius: 10px;
+}
+body main section.services .container .mt-4 .row .col-md-4 .card h3 {
+  font-family: "Kaushan Script", cursove;
+  color: #6C63FF;
+}
+body main section.faq .container h1 {
+  font-family: "Kaushan Script", cursive;
+}
+body main section.faq .container .mt-3 .accordion-button {
+  box-shadow: none !important;
+}
+body footer {
+  padding: 5rem 0px;
+  background: url("../images/Rect Light.svg");
+  background-position: center;
+  background-size: cover;
 }/*# sourceMappingURL=Style.css.map */
