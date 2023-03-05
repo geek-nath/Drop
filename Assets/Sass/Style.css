@@ -7,16 +7,51 @@ body {
   font-family: "Barlow", sans-serif !important;
 }
 body .btn {
-  padding: 12px 25px !important;
-  font-size: 1.2rem;
+  padding: 10px 20px !important;
+  font-size: 1.1rem;
   border-radius: 10px !important;
 }
 body .btn.btn-primary {
   background-color: #6C63FF !important;
   border-color: #6C63FF !important;
 }
+body nav {
+  transition: 0.5s ease-in;
+}
+body nav.navbar-dark .container ul li a {
+  color: white !important;
+}
+body nav.navbar-light .container ul li a {
+  color: #222 !important;
+}
+@media screen and (max-width: 768px) {
+  body nav .container .navbar-toggler {
+    background-color: #6C63FF;
+    border-color: #6C63FF;
+    opacity: 1 !important;
+  }
+  body nav .container div {
+    background: #222;
+    border-radius: 10px;
+    padding: 20px;
+  }
+}
+body nav .container .navbar-brand {
+  font-family: "Kaushan Script", cursive;
+  font-size: 2rem;
+  color: #6C63FF !important;
+}
 body nav .container div .btn-primary {
   padding: 10px 20px !important;
+}
+body nav .container div ul li {
+  font-size: 1.1rem;
+}
+body nav .container div ul li a {
+  transition: 0.3s ease-in;
+}
+body nav .container div ul li a:hover {
+  color: #6C63FF !important;
 }
 body .hero {
   height: 100vh;
@@ -24,6 +59,31 @@ body .hero {
   background: url("../images/Curve Line.svg");
   background-position: center;
   background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  body .hero {
+    height: 100vh !important;
+  }
+  body .hero .col-md-6 .text-white h5 {
+    font-size: 0.8rem;
+  }
+  body .hero .col-md-6 .text-white h1 {
+    font-size: 1.8rem !important;
+  }
+  body .hero .col-md-6 .text-white p {
+    font-size: 0.7rem;
+  }
+  body .hero .col-md-6:nth-child(2) {
+    margin-top: 50px;
+  }
+  body .hero .col-md-6:nth-child(2) img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 425px) {
+  body .hero .col-md-6:nth-child(2) img {
+    width: 60%;
+  }
 }
 body .hero .container {
   display: flex;
@@ -38,7 +98,13 @@ body .hero .container .hero_text .row .col-md-6 .text-white h5 {
   font-family: "Kaushan Script", cursive !important;
 }
 body .hero .container .hero_text .row .col-md-6 .text-white h1 {
-  font-size: 3.3rem;
-  font-weight: 900;
+  font-size: 2.5rem;
+  font-weight: 800;
   letter-spacing: 2px;
+}
+body main section {
+  padding: 5rem 0px;
+}
+body main section.about .container h1 {
+  font-family: "Kaushan Script", cursive;
 }/*# sourceMappingURL=Style.css.map */
